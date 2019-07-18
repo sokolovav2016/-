@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Книжная полка</title>
+</head>
+
+<body class="container">
+  <header class="page-header">
+    <h1 class="page-header__title">Книжная полка</h1>
+    <button class="button page-header__button">Добавить книгу</button>
+  </header>
+
+  <main>
+    <section class="bookshelf">
+      <h2 class="visually-hidden">Список книг</h2>
+      <ul class="bookshelf__list">
+        <li class="book bookshelf__item">
+          <div class="book__wrapper">
+            <div class="book__img">
+              <img
+                src="https://j.livelib.ru/boocover/1001423253/200/4b38/Devid_Sojer_Makfarland__JavaScript_i_jQuery._Ischerpyvayuschee_rukovodstvo.jpg"
+                alt="Обложка книги">
+            </div>
+            <div class="book__description">
+              <h3 class="book__name">JavaScript и jQuery</h3>
+              <p class="book__autor">Дэвид Сойер Макфарланд</p>
+              <span class="book__date">2016г.</span>
+            </div>
+          </div>
+          <div class="book__buttons">
+            <button class="book__button book__button--edit">Редактировать</button>
+            <button class="book__button book__button--del">Удалить</button>
+          </div>
+        </li>
+
+        <li class="book bookshelf__item">
+          <div class="book__wrapper">
+            <div class="book__img">
+              <img class="book__img"
+                src="https://j.livelib.ru/boocover/1001485559/200/b1cc/__Izuchaem_programmirovanie_na_JavaScript.jpg"
+                alt="Обложка книги">
+            </div>
+            <div class="book__description">
+              <h3 class="book__name">Изучаем программирование на JavaScript</h3>
+              <p class="book__autor">Эрик Фримен, Элизабет Робсон</p>
+              <span class="book__date">2017г.</span>
+            </div>
+          </div>
+          <div class="book__buttons">
+            <button class="book__button book__button--edit">Редактировать</button>
+            <button class="book__button book__button--del">Удалить</button>
+          </div>
+        </li>
+
+        <li class="book bookshelf__item">
+          <div class="book__wrapper">
+            <div class="book__img">
+              <img class="book__img"
+                src="https://i.livelib.ru/boocover/1000719215/200/8428/__Sekrety_JavaScript_nindzya.jpg"
+                alt="Обложка книги">
+            </div>
+            <div class="book__description">
+              <h3 class="book__name">Секреты JavaScript ниндзя</h3>
+              <p class="book__autor">Джон Резиг, Беэр Бибо</p>
+              <span class="book__date">2017г.</span>
+            </div>
+          </div>
+          <div class="book__buttons">
+            <button class="book__button book__button--edit">Редактировать</button>
+            <button class="book__button book__button--del">Удалить</button>
+          </div>
+        </li>
+
+        <li class="book bookshelf__item">
+          <div class="book__wrapper">
+            <div class="book__img">
+              <img class="book__img"
+                src="https://i.livelib.ru/boocover/1001643806/200/6a28/Kajl_Simpson__ES6_i_ne_tolko.jpg"
+                alt="Обложка книги">
+            </div>
+            <div class="book__description">
+              <h3 class="book__name">ES6 и не только</h3>
+              <p class="book__autor">Кайл Симпсон</p>
+              <span class="book__date">2017г.</span>
+            </div>
+          </div>
+          <div class="book__buttons">
+            <button class="book__button book__button--edit">Редактировать</button>
+            <button class="book__button book__button--del">Удалить</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <template id="book">
+    <li class="book bookshelf__item">
+      <div class="book__wrapper">
+        <div class="book__img">
+          <img class="book__img" src="" alt="Обложка книги">
+        </div>
+        <div class="book__description">
+          <h3 class="book__name"></h3>
+          <p class="book__autor"></p>
+          <span class="book__date"></span>
+        </div>
+      </div>
+      <div class="book__buttons">
+        <button class="book__button book__button--edit">Редактировать</button>
+        <button class="book__button book__button--del">Удалить</button>
+      </div>
+    </li>
+  </template>
+
+</body>
+
+</html>

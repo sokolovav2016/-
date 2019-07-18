@@ -1,0 +1,17 @@
+body {
+  min-width: $mobile-width;
+
+  font-family: $main-font;
+  color: $text-color;
+
+  background-color: $bg-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  transition-duration: $link-hover;
+}

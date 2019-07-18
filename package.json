@@ -1,0 +1,30 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "Репозиторий создан для выполнения тестового задания \"Книжная полка\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sokolovav2016/Bookshelf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sokolovav2016/Bookshelf/issues"
+  },
+  "homepage": "https://github.com/sokolovav2016/Bookshelf#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
