@@ -15,10 +15,10 @@
   </header>
 
   <main>
-    <section class="bookshelf">
+    <section class="books">
       <h2 class="visually-hidden">Список книг</h2>
-      <ul class="bookshelf__list">
-        <li class="book bookshelf__item">
+      <ul class="books__list">
+        <li class="book books__item">
           <div class="book__wrapper">
             <div class="book__img">
               <img
@@ -28,7 +28,10 @@
             <div class="book__description">
               <h3 class="book__name">JavaScript и jQuery</h3>
               <p class="book__autor">Дэвид Сойер Макфарланд</p>
-              <span class="book__date">2016г.</span>
+              <p class="book__date">
+                <span class="book__year">2016</span>
+                <span>г.</span>
+              </p>
             </div>
           </div>
           <div class="book__buttons">
@@ -37,7 +40,7 @@
           </div>
         </li>
 
-        <li class="book bookshelf__item">
+        <li class="book books__item">
           <div class="book__wrapper">
             <div class="book__img">
               <img class="book__img"
@@ -47,7 +50,10 @@
             <div class="book__description">
               <h3 class="book__name">Изучаем программирование на JavaScript</h3>
               <p class="book__autor">Эрик Фримен, Элизабет Робсон</p>
-              <span class="book__date">2017г.</span>
+              <p class="book__date">
+                <span class="book__year">2017</span>
+                <span>г.</span>
+              </p>
             </div>
           </div>
           <div class="book__buttons">
@@ -56,7 +62,7 @@
           </div>
         </li>
 
-        <li class="book bookshelf__item">
+        <li class="book books__item">
           <div class="book__wrapper">
             <div class="book__img">
               <img class="book__img"
@@ -66,7 +72,10 @@
             <div class="book__description">
               <h3 class="book__name">Секреты JavaScript ниндзя</h3>
               <p class="book__autor">Джон Резиг, Беэр Бибо</p>
-              <span class="book__date">2017г.</span>
+              <p class="book__date">
+                <span class="book__year">2017</span>
+                <span>г.</span>
+              </p>
             </div>
           </div>
           <div class="book__buttons">
@@ -75,7 +84,7 @@
           </div>
         </li>
 
-        <li class="book bookshelf__item">
+        <li class="book books__item">
           <div class="book__wrapper">
             <div class="book__img">
               <img class="book__img"
@@ -85,7 +94,10 @@
             <div class="book__description">
               <h3 class="book__name">ES6 и не только</h3>
               <p class="book__autor">Кайл Симпсон</p>
-              <span class="book__date">2017г.</span>
+              <p class="book__date">
+                <span class="book__year">2017</span>
+                <span>г.</span>
+              </p>
             </div>
           </div>
           <div class="book__buttons">
@@ -95,10 +107,37 @@
         </li>
       </ul>
     </section>
+
+    <section class="edit">
+      <h2 class="edit__title">Редактирование книги</h2>
+      <form class="edit__form" action="">
+        <p class="edit__field">
+          <label class="edit__label" for="name">Наименование</label>
+          <input class="edit__input" type="text" name="name" id="name">
+        </p>
+        <p class="edit__field">
+          <label class="edit__label" for="autor">Автор</label>
+          <input class="edit__input" type="text" name="autor" id="autor">
+        </p>
+        <p class="edit__field">
+          <label class="edit__label" for="year">Год выпуска</label>
+          <input class="edit__input edit__input--year" type="number" name="year" id="year">
+        </p>
+        <p class="edit__field">
+          <label class="edit__label" for="address">Изображение</label>
+          <input class="edit__input" type="text" name="address" id="address">
+        </p>
+
+        <div class="edit__buttons">
+          <button class="button button--save">Сохранить</button>
+          <button class="button button--cancel">Отменить</button>
+        </div>
+      </form>
+    </section>
   </main>
 
   <template id="book">
-    <li class="book bookshelf__item">
+    <li class="book books__item">
       <div class="book__wrapper">
         <div class="book__img">
           <img class="book__img" src="" alt="Обложка книги">
@@ -106,7 +145,10 @@
         <div class="book__description">
           <h3 class="book__name"></h3>
           <p class="book__autor"></p>
-          <span class="book__date"></span>
+          <p class="book__date">
+            <span class="book__year"></span>
+            <span>г.</span>
+          </p>
         </div>
       </div>
       <div class="book__buttons">

@@ -11,6 +11,7 @@
 
 .book__wrapper {
   display: flex;
+  align-items: center;
   margin-bottom: 15px;
 }
 
@@ -26,23 +27,25 @@
   }
 }
 
-.book__description {
-
-  h3,
-  p {
+  .book__name,
+  .book__autor {
     margin: 0 0 7px 0;
     padding: 0;
   }
 
-  h3 {
-    font-size: 20px;
+  .book__name {
+    font-size: $font-title;
   }
 
-  p,
-  span {
-    font-size: 15px;
+  .book__autor,
+  .book__date {
+    font-size: $font-text;
   }
-}
+
+  .book__date {
+    margin: 0;
+    padding: 0;
+  }
 
 .book__buttons {
   display: flex;
