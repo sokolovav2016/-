@@ -15,8 +15,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/*.html",
-      "source/js/*.js",
-      "source/img/**"
+      "source/js/*.js"
     ], {
       base: "source"
     })
@@ -42,8 +41,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/*.html", gulp.series("copy", "refresh"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("copy", "refresh"));
-  gulp.watch("source/img/**/*.{png,jpg}", gulp.series("copy", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("copy", "refresh"));
 });
 
 gulp.task("refresh", function (done) {

@@ -15,4 +15,12 @@
 
     background-color: $button-hover-color;
   }
+
+  &[disabled] {
+    color: #ffffff;
+
+    background-color: $button-color;
+
+    opacity: 0.5;
+  }
 }

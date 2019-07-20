@@ -43,8 +43,7 @@
         <li class="book books__item">
           <div class="book__wrapper">
             <div class="book__img">
-              <img class="book__img"
-                src="https://j.livelib.ru/boocover/1001485559/200/b1cc/__Izuchaem_programmirovanie_na_JavaScript.jpg"
+              <img src="https://j.livelib.ru/boocover/1001485559/200/b1cc/__Izuchaem_programmirovanie_na_JavaScript.jpg"
                 alt="Обложка книги">
             </div>
             <div class="book__description">
@@ -65,8 +64,7 @@
         <li class="book books__item">
           <div class="book__wrapper">
             <div class="book__img">
-              <img class="book__img"
-                src="https://i.livelib.ru/boocover/1000719215/200/8428/__Sekrety_JavaScript_nindzya.jpg"
+              <img src="https://i.livelib.ru/boocover/1000719215/200/8428/__Sekrety_JavaScript_nindzya.jpg"
                 alt="Обложка книги">
             </div>
             <div class="book__description">
@@ -87,8 +85,7 @@
         <li class="book books__item">
           <div class="book__wrapper">
             <div class="book__img">
-              <img class="book__img"
-                src="https://i.livelib.ru/boocover/1001643806/200/6a28/Kajl_Simpson__ES6_i_ne_tolko.jpg"
+              <img src="https://i.livelib.ru/boocover/1001643806/200/6a28/Kajl_Simpson__ES6_i_ne_tolko.jpg"
                 alt="Обложка книги">
             </div>
             <div class="book__description">
@@ -108,9 +105,9 @@
       </ul>
     </section>
 
-    <section class="edit">
-      <h2 class="edit__title">Редактирование книги</h2>
-      <form class="edit__form" action="">
+    <section class="edit hidden">
+      <h2 class="edit__title"></h2>
+      <form class="edit__form">
         <p class="edit__field">
           <label class="edit__label" for="name">Наименование</label>
           <input class="edit__input" type="text" name="name" id="name">
@@ -121,7 +118,7 @@
         </p>
         <p class="edit__field">
           <label class="edit__label" for="year">Год выпуска</label>
-          <input class="edit__input edit__input--year" type="number" name="year" id="year">
+          <input class="edit__input edit__input--year" type="number" name="year" id="year" max="2017">
         </p>
         <p class="edit__field">
           <label class="edit__label" for="address">Изображение</label>
@@ -140,7 +137,7 @@
     <li class="book books__item">
       <div class="book__wrapper">
         <div class="book__img">
-          <img class="book__img" src="" alt="Обложка книги">
+          <img src="" alt="Обложка книги">
         </div>
         <div class="book__description">
           <h3 class="book__name"></h3>
@@ -157,6 +154,11 @@
       </div>
     </li>
   </template>
+
+  <script src="js/util.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/site.js"></script>
 
 </body>
 
