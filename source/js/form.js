@@ -15,15 +15,6 @@
 
     var isBook = false;
 
-    if (book) {
-      var bookImgElement = book.querySelector('.book__img img');
-      var bookNameElement = book.querySelector('.book__name');
-      var bookAutorElement = book.querySelector('.book__autor');
-      var bookYearElement = book.querySelector('.book__year');
-
-      isBook = true;
-    }
-
     function removeFormListeners() {
       formSaveElement.removeEventListener('click', onButtonSaveClick);
       formCancelElement.removeEventListener('click', onButtonCancelClick);
@@ -62,13 +53,7 @@
           .querySelector('.book');
         var newBookElement = bookTemplateElement.cloneNode(true);
 
-        // console.log(newBookElement.querySelector('.book__img img').src);
-        // console.log(inputImgElement.value);
         newBookElement.querySelector('.book__img img').src = inputImgElement.value;
-        // console.log(newBookElement.querySelector('.book__img img').src);
-        // console.log(inputImgElement.value);
-        
-        
         newBookElement.querySelector('.book__name').textContent = inputNameElement.value;
         newBookElement.querySelector('.book__autor').textContent = inputAutorElement.value;
         newBookElement.querySelector('.book__year').textContent = inputYearElement.value;
@@ -103,18 +88,22 @@
       inputYearElement.addEventListener('input', onYearInput);
     }
 
+    if (book) {
+      var bookImgElement = book.querySelector('.book__img img');
+      var bookNameElement = book.querySelector('.book__name');
+      var bookAutorElement = book.querySelector('.book__autor');
+      var bookYearElement = book.querySelector('.book__year');
+
+      isBook = true;
+    }
+
     if (isBook) {
       titleElement.textContent = 'Редактирование книги';
 
       inputNameElement.value = bookNameElement.textContent;
       inputAutorElement.value = bookAutorElement.textContent;
       inputYearElement.value = bookYearElement.textContent;
-
-      // console.log('bookImgElement.src: ' + bookImgElement.src);
-      // console.log('inputImgElement.value: ' + inputImgElement.value);
       inputImgElement.value = bookImgElement.src;
-      // console.log('bookImgElement.src: ' + bookImgElement.src);
-      // console.log('inputImgElement.value: ' + inputImgElement.value);
     } else {
       titleElement.textContent = 'Добавление книги';
     }
